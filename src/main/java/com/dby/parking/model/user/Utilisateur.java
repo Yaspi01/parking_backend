@@ -44,10 +44,10 @@ public class Utilisateur {
 
     @NotNull
     @Size(min = 3, max = 15)
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String login;
 
     @NotNull
-    @Column(length = 50)
+    @Column(length = 255)
     private String password;
 }
